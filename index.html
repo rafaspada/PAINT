@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint HTML</title>
+    <link rel="shortcut icon" href="/paint.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet" href="style.css">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+    <section class="container">
+        <canvas width="900" height="600"></canvas>
+        <div>
+            <section class="tool-box">
+                <button class="button-tool active" data-action="brush">
+                    <span class="material-symbols-outlined">brush</span>
+                </button>
+
+                <button class="button-tool" data-action="rubber">
+                    <span class="material-symbols-outlined">ink_eraser</span>
+                </button>
+
+                <button class="button-tool">
+                    <input type="color" class="input-color">
+                </button>
+            </section>
+            <section class="tool-box">
+                <button class="button-size" data-size=5>
+                    <span class="stroke"></span>
+                </button>
+                <button class="button-size" data-size=10>
+                    <span class="stroke"></span>
+                </button>
+                <button class="button-size active" data-size=20>
+                    <span class="stroke"></span>
+                </button>
+                <button class="button-size" data-size=30>
+                    <span class="stroke"></span>
+                </button>
+            </section>
+            <section class="tool-box">
+                <button class="button-tool button-clear">
+                    <span class="material-symbols-outlined">delete</span>
+                </button>
+            </section>
+        </div>
+    </section>
+</body>
+</html>
